@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: Norse;
-    src: url('Norse-Bold.otf');
+    src: url('Norse-Bold.otf'); /*downloaded font face*/
 }
 
 :root{
