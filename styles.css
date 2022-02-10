@@ -1,20 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
+@font-face {
+    font-family: Norse;
+    src: url('Norse-Bold.otf');
+}
 
+:root{
+    font-family: 'Roboto', sans-serif;
+}
 body{
     display: flex;
     margin: 0;
     
 }
 
-
+h4{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
 /* for image in left side */
 .image{
     height: 100vh;
     padding: 0;
-    background-color: aquamarine;
+    background-color: brown;
+    z-index: -1;
 }
 
-.image img{
+.logo{
+    z-index: 2;
+    opacity: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    background-color: black;
+    padding:  1rem;
+    max-width: 100%;
+}
+
+.odin-logo{
+    max-height: 100%;
+    width: 120px;
+    z-index: 3;
+    display: inline;
+}
+
+.logo p{
+    font-family: 'Norse';
+    color: white;
+    display: inline;
+    font-size: 4rem;
+}
+
+.image .leaves{
+    z-index: 1;
     max-width: 100%;
     height: 100vh;
 }
@@ -22,7 +63,7 @@ body{
 /* top text section */
 
 .text{
-    height: 33.33vh;
+    height: 22vh;
     width: 60vw;
 }
 
@@ -30,6 +71,7 @@ body{
 input, label{
     display: block;
     padding: 10px;
+    width: 100%;
 }
 
 label{
@@ -73,8 +115,30 @@ input{
     border-color: red;
 }
 
-p{
+#one p{
     color: red;
     padding: 0;
     margin: 0;
+}
+
+/* buttons */
+.btn{
+    background-color: #596D48;
+    padding: 1rem;
+    border-radius: 7px;
+    font-size: 1rem;
+    color: white;
+    box-shadow: none;
+    margin: 2rem 0 0 18rem;
+    display: block;
+}
+
+.already{
+    display: inline;
+    margin: 2rem 0 0 18rem;;
+}
+
+a{
+    color: #596D48;
+    text-decoration: none;
 }
